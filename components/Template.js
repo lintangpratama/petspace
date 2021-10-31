@@ -5,7 +5,7 @@ export default function Template() {
   return (
     <div className="flex flex-col">
       <Head>
-        <title>PetSpace - Status Kucing Titipan</title>
+        <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
         <link rel="icon" href="/petspace.png" />
       </Head>
       <body className="">

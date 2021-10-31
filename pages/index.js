@@ -269,7 +269,7 @@ export default function Home() {
               </div>
             </div>
 
-            <Bar />
+            <Bar currentPage="home" />
             <div className="w-full h-14"></div>
           </div>
         </div>
