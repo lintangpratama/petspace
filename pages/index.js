@@ -1,82 +1,156 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Bar from "../components/Bar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { FreeMode, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+
+SwiperCore.use([FreeMode, Pagination]);
 
 export default function Home() {
+  const user = null;
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col">
       <Head>
-        <title>Create Next App</title>
+        <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <body className="">
+        <div className="h-full bg-gray-100">
+          <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
+            <div className="flex flex-col">
+              <div className="mx-5 my-10">
+                <div className="flex flex-row">
+                  <img src="/petspace.png" className="w-14 rounded"></img>
+                </div>
+                <div className="mt-10">
+                  <h1 className="font-normal text-cyan-main font-sans text-2xl">
+                    {user ? `Selamat datang, ${user}` : "Selamat datang, Guest"}
+                  </h1>
+                  <p className="text-sm font-serif text-gray-500">
+                    lorem ipsum dolor sit amet
+                  </p>
+                </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
+                <div class="mt-7">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="bg-search-bg text-search-font w-full px-4 py-3 rounded-md text-sm font-serif focus:outline-none"
+                    placeholder="Mau titip hewan di kota mana?"
+                  ></input>
+                </div>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+                <Swiper
+                  slidesPerView={1.1}
+                  spaceBetween={20}
+                  freeMode={true}
+                  className="mySwiper mt-9"
+                >
+                  <SwiperSlide className="py-24 text-center bg-gray-100 rounded-xl">
+                    Slide 1
+                  </SwiperSlide>
+                  <SwiperSlide className="py-24 text-center bg-gray-100 rounded">
+                    Slide 2
+                  </SwiperSlide>
+                </Swiper>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+                <div className="mt-9">
+                  <h1 className="font-normal text-cyan-secondary font-sans text-base">
+                    Space di Semarang
+                  </h1>
+                  <p className="text-xs font-serif text-gray-500">
+                    lorem ipsum dolor sit amet
+                  </p>
+                </div>
+                <Swiper
+                  slidesPerView={1.6}
+                  spaceBetween={20}
+                  freeMode={true}
+                  className="mySwiper mt-3"
+                >
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 1
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 2
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 3
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 4
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 5
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 6
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 7
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 8
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 9
+                  </SwiperSlide>
+                </Swiper>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+                <div className="mt-9">
+                  <h1 className="font-normal text-cyan-secondary font-sans text-base">
+                    Space Terbaik Bulan Ini
+                  </h1>
+                  <p className="text-xs font-serif text-gray-500">
+                    lorem ipsum dolor sit amet
+                  </p>
+                </div>
+                <Swiper
+                  slidesPerView={2}
+                  spaceBetween={15}
+                  freeMode={true}
+                  className="mySwiper mt-3"
+                >
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 1
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 2
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 3
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 4
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 5
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 6
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 7
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 8
+                  </SwiperSlide>
+                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
+                    Slide 9
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <Bar />
+            <div className="w-full h-14"></div>
+          </div>
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      </body>
     </div>
-  )
+  );
 }
