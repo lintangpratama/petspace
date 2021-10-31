@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Bar from "../components/Bar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { FreeMode, Pagination } from "swiper";
@@ -14,7 +15,7 @@ export default function Home() {
     <div className="flex flex-col">
       <Head>
         <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/petspace.png" />
       </Head>
 
       <body className="">
@@ -26,7 +27,7 @@ export default function Home() {
                   <img src="/petspace.png" className="w-14 rounded"></img>
                 </div>
                 <div className="mt-10">
-                  <h1 className="font-normal text-cyan-main font-sans text-2xl">
+                  <h1 className="font-normal text-blue-main font-sans text-2xl">
                     {user ? `Selamat datang, ${user}` : "Selamat datang, Guest"}
                   </h1>
                   <p className="text-sm font-serif text-gray-500">
@@ -39,108 +40,230 @@ export default function Home() {
                     type="text"
                     name="search"
                     id="search"
-                    class="bg-search-bg text-search-font w-full px-4 py-3 rounded-md text-sm font-serif focus:outline-none"
+                    class="bg-search-bg bg-blue-secondary w-full px-4 py-3 rounded-md text-sm font-serif focus:outline-none"
                     placeholder="Mau titip hewan di kota mana?"
                   ></input>
                 </div>
 
                 <Swiper
-                  slidesPerView={1.1}
+                  slidesPerView={1.15}
                   spaceBetween={20}
                   freeMode={true}
                   className="mySwiper mt-9"
                 >
-                  <SwiperSlide className="py-24 text-center bg-gray-100 rounded-xl">
-                    Slide 1
+                  <SwiperSlide className="text-center bg-card-status bg-cover rounded-xl">
+                    <div className="flex px-4 py-7 md:py-10">
+                      <div className="flex flex-col w-2/3 text-left justify-between">
+                        <h2 className="text-white text-xs md:text-base">
+                          Hai! Yuk lihat status penitipan kucingmu
+                        </h2>
+                        <Link href="/status/cat">
+                          <button className="py-1.5 w-20 text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
+                            <a>Check</a>
+                          </button>
+                        </Link>
+                      </div>
+                      <img src="/status-card/cat.png" className="w-1/3"></img>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-24 text-center bg-gray-100 rounded">
-                    Slide 2
+                  <SwiperSlide className="text-center bg-card-status bg-cover rounded-xl">
+                    <div className="flex px-4 py-7 md:py-10">
+                      <div className="flex flex-col w-2/3 text-left justify-between">
+                        <h2 className="text-white text-xs md:text-base">
+                          Hai! Yuk lihat status penitipan anjingmu
+                        </h2>
+                        <Link href="/status/dog">
+                          <button className="py-1.5 w-20 text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
+                            <a>Check</a>
+                          </button>
+                        </Link>
+                      </div>
+                      <img src="/status-card/dog.png" className="w-1/3"></img>
+                    </div>
                   </SwiperSlide>
                 </Swiper>
 
                 <div className="mt-9">
-                  <h1 className="font-normal text-cyan-secondary font-sans text-base">
+                  <h1 className="font-normal text-blue-main font-sans text-base">
                     Space di Semarang
                   </h1>
                   <p className="text-xs font-serif text-gray-500">
                     lorem ipsum dolor sit amet
                   </p>
                 </div>
+
                 <Swiper
-                  slidesPerView={1.6}
+                  slidesPerView={1.3}
                   spaceBetween={20}
                   freeMode={true}
+                  breakpoints={{
+                    // when window width is >= 640px
+                    350: {
+                      slidesPerView: 1.5,
+                      spaceBetween: 20,
+                    },
+                    380: {
+                      slidesPerView: 1.8,
+                      spaceBetween: 20,
+                    },
+                  }}
                   className="mySwiper mt-3"
                 >
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 1
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 2
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 3
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 4
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 5
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 6
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 7
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 8
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 9
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
                 </Swiper>
 
-                <div className="mt-9">
-                  <h1 className="font-normal text-cyan-secondary font-sans text-base">
+                <div className="mt-10">
+                  <h1 className="font-normal text-blue-main font-sans text-base">
                     Space Terbaik Bulan Ini
                   </h1>
                   <p className="text-xs font-serif text-gray-500">
                     lorem ipsum dolor sit amet
                   </p>
                 </div>
+
                 <Swiper
-                  slidesPerView={2}
-                  spaceBetween={15}
+                  slidesPerView={1.3}
+                  spaceBetween={20}
                   freeMode={true}
+                  breakpoints={{
+                    // when window width is >= 640px
+                    350: {
+                      slidesPerView: 1.5,
+                      spaceBetween: 20,
+                    },
+                    380: {
+                      slidesPerView: 1.8,
+                      spaceBetween: 20,
+                    },
+                  }}
                   className="mySwiper mt-3"
                 >
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 1
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 2
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 3
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 4
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 5
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 6
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 7
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 8
-                  </SwiperSlide>
-                  <SwiperSlide className="py-28 text-center bg-gray-300 rounded">
-                    Slide 9
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
+                    <div className="flex flex-col">
+                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
+                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
+                    </div>
                   </SwiperSlide>
                 </Swiper>
               </div>

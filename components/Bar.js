@@ -1,7 +1,7 @@
 export default function Bar() {
   return (
     <div className="flex bg-white fixed bottom-0 h-14 justify-center z-30 max-w-md w-full">
-      <button className="px-3 py-2 w-1/4 max-w-bar min-w-bar cursor-pointer">
+      <button className="px-3  py-2 w-1/4 max-w-bar min-w-bar cursor-pointer">
         <span className="inline-flex flex-col w-full justify-center items-center">
           <svg
             width="24"
@@ -12,10 +12,10 @@ export default function Bar() {
           >
             <path
               d="M4.293 10.707L11.293 3.70697C11.6835 3.31659 12.3165 3.31659 12.707 3.70697L19.707 10.707C19.8945 10.8945 20 11.1488 20 11.414V21C20 21.5523 19.5523 22 19 22H14V15H10V22H5C4.44772 22 4 21.5523 4 21V11.414C4 11.1488 4.10545 10.8945 4.293 10.707Z"
-              fill="#63C6CD"
+              fill="#429FF2"
             />
           </svg>
-          <span className="font-sans font-light text-xs text-cyan-main">
+          <span className="font-sans font-light text-xs text-blue-main">
             Home
           </span>
         </span>
