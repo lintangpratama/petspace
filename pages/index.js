@@ -16,6 +16,16 @@ export default function Home() {
       <Head>
         <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
         <link rel="icon" href="/petspace.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <body className="">
@@ -27,10 +37,10 @@ export default function Home() {
                   <img src="/petspace.png" className="w-14 rounded"></img>
                 </div>
                 <div className="mt-10">
-                  <h1 className="font-normal text-blue-main font-sans text-2xl">
+                  <h1 className="font-normal font-main text-gray-900 text-2xl">
                     {user ? `Selamat datang, ${user}` : "Selamat datang, Guest"}
                   </h1>
-                  <p className="text-sm font-serif text-gray-500">
+                  <p className="text-sm font-secondary text-gray-500">
                     lorem ipsum dolor sit amet
                   </p>
                 </div>
@@ -54,11 +64,11 @@ export default function Home() {
                   <SwiperSlide className="text-center bg-card-status bg-cover rounded-xl">
                     <div className="flex px-4 py-7 md:py-10">
                       <div className="flex flex-col w-2/3 text-left justify-between">
-                        <h2 className="text-white text-xs md:text-base">
+                        <h2 className="text-white font-secondary text-xs md:text-base">
                           Hai! Yuk lihat status penitipan kucingmu
                         </h2>
                         <Link href="/status/cat">
-                          <button className="py-1.5 w-20 text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
+                          <button className="py-1.5 w-20 font-secondary text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
                             <a>Check</a>
                           </button>
                         </Link>
@@ -69,11 +79,11 @@ export default function Home() {
                   <SwiperSlide className="text-center bg-card-status bg-cover rounded-xl">
                     <div className="flex px-4 py-7 md:py-10">
                       <div className="flex flex-col w-2/3 text-left justify-between">
-                        <h2 className="text-white text-xs md:text-base">
+                        <h2 className="text-white font-secondary text-xs md:text-base">
                           Hai! Yuk lihat status penitipan anjingmu
                         </h2>
                         <Link href="/status/dog">
-                          <button className="py-1.5 w-20 text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
+                          <button className="py-1.5 w-20 font-secondary text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
                             <a>Check</a>
                           </button>
                         </Link>
@@ -84,10 +94,10 @@ export default function Home() {
                 </Swiper>
 
                 <div className="mt-9">
-                  <h1 className="font-normal text-blue-main font-sans text-base">
+                  <h1 className="font-semibold font-secondary text-blue-main text-base">
                     Space di Semarang
                   </h1>
-                  <p className="text-xs font-serif text-gray-500">
+                  <p className="text-xs font-secondary text-gray-500">
                     lorem ipsum dolor sit amet
                   </p>
                 </div>

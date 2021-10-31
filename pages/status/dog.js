@@ -9,9 +9,20 @@ export default function Cat() {
   return (
     <div className="flex flex-col">
       <Head>
-        <title>PetSpace - Status Kucing Titipan</title>
+        <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
         <link rel="icon" href="/petspace.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
+      
       <body className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">

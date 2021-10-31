@@ -22,7 +22,7 @@ export default function Cat() {
           rel="stylesheet"
         ></link>
       </Head>
-      
+
       <body className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
@@ -50,7 +50,7 @@ export default function Cat() {
                 </button>
 
                 <div className="mt-10">
-                  <h1 className="font-normal text-blue-main font-sans text-2xl">
+                  <h1 className="font-semibold font-main text-gray-900 text-2xl">
                     Space Status
                   </h1>
                   <p className="text-sm font-serif text-gray-500">
@@ -58,25 +58,24 @@ export default function Cat() {
                   </p>
                 </div>
 
-                <div className="flex flex-col bg-card-status bg-auto justify-center rounded-xl items-center text-center px-4 py-7 mt-10 md:py-10">
+                <div className="flex flex-col justify-center rounded-xl items-center text-center px-4 py-7 mt-10 md:py-10">
                   <img
-                    src="/status-card/cat-status.png"
+                    src="/status-card/dog-sleep.png"
                     className="w-40 md:w-52"
                   ></img>
-                  <div className="flex flex-col w-9/12 justify-between">
-                    <h2 className="text-white text-4xl font-semibold md:text-base text-center">
-                      Kitty
+                  <div className="flex flex-col w-9/12 justify-between mt-2">
+                    <h2 className="text-black text-2xl font-semibold text-center">
+                      Ups!
                     </h2>
-                    <div className="text-sm text-center font-serif text-white w-full my-4">
-                      <p>Pemilik Space: Lintang Aji Yoga Pratama</p>
-                      <p>Tanggal Masuk: 19 Oktober 2021</p>
-                      <p>Tanggal Keluar: 6 November 2021</p>
-                      <p>Status: Accepted</p>
+                    <div className="text-medium text-center font-serif text-black w-full mb-4">
+                      <p>Data space masih kosong</p>
                     </div>
 
-                    <button className="py-1.5 w-36 text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm mx-auto">
-                      <a href={`https://api.whatsapp.com/send?phone=6285591639594&text=Test${name}`}>Chat via WhatsApp</a>
-                    </button>
+                    <Link href="/space">
+                        <button className="py-2.5 w-36 text-white text-xs bg-blue-main rounded-lg mt-12 md:text-sm mx-auto">
+                            <a>Browse Space</a>
+                        </button>
+                    </Link>
                   </div>
                 </div>
               </div>

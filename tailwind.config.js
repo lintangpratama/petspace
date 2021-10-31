@@ -5,35 +5,39 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '100': "28rem",
+        100: "28rem",
       },
       maxWidth: {
-        'bar': "168px",
+        bar: "168px",
       },
       minWidth: {
-        'bar': "80px",
+        bar: "80px",
       },
       colors: {
-        'bar': '#B9BCBE',
-        'blue-main': '#429FF2',
-        'blue-secondary': 'rgba(66, 159, 242, 0.1)',
-        'yellow-pet': '#F4AB5C',
-        'search-bg': '#F5F5F5',
-        'search-font': '#88888C',
+        bar: "#B9BCBE",
+        "blue-main": "#429FF2",
+        "blue-secondary": "rgba(66, 159, 242, 0.1)",
+        "yellow-pet": "#F4AB5C",
+        "search-bg": "#F5F5F5",
+        "search-font": "#88888C",
       },
       fontSize: {
-        'bar': '.75rem',
+        bar: ".75rem",
       },
       margin: {
-        '-0.5': '-2px'
+        "-0.5": "-2px",
       },
       backgroundImage: {
-        'card-status': "url('/status-card/card-bg.png')",
-      }
+        "card-status": "url('/status-card/card-bg.png')",
+      },
+      fontFamily: {
+        main: ["Poppins"],
+        secondary: ["Inter"],
+      },
     },
     screens: {
-      'md': '350px',
-    }
+      md: "350px",
+    },
   },
   variants: {
     extend: {},
