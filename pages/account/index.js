@@ -8,12 +8,14 @@ export default function Template() {
         <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
         <link rel="icon" href="/petspace.png" />
       </Head>
-      <body className="">
+      <body className="h-screen">
         <div className="h-full bg-gray-100">
-          <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
-            <div className="flex flex-col">
+          <div className="block box-border bg-white max-w-md w-full mx-auto">
+            <div className="flex flex-col h-screen">
               <div className="mx-5 my-10">
                   {/* Mulai ngoding di sini */}
+
+                  
               </div>
             </div>
 

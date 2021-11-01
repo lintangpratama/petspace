@@ -11,7 +11,7 @@ export default function Template() {
       <body className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
-            <div className="flex flex-col">
+            <div className="flex flex-col h-screen">
               <div className="mx-5 my-10">
                   {/* Mulai ngoding di sini */}
               </div>

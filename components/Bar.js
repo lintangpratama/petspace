@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function Bar(props) {
-  console.log(props.currentPage);
   return (
     <div className="flex bg-white fixed bottom-0 h-14 justify-center z-30 max-w-md w-full">
       <Link href="/">

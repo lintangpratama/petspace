@@ -31,7 +31,7 @@ export default function Home() {
       <body className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
-            <div className="flex flex-col">
+            <div className="flex flex-col h-screen">
               <div className="mx-5 my-10">
                 <div className="flex flex-row">
                   <img src="/petspace.png" className="w-14 rounded"></img>
