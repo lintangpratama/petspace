@@ -60,7 +60,8 @@ export default function Template() {
                     </p>
                   </div>
                 </button> */}
-                <div className="collapse border rounded-box border-base-300 collapse-arrow w-full mt-4">
+                <div className="pt-7"></div>
+                <div className="collapse border rounded-box border-base-300 collapse-arrow w-full mt-4 py-0">
                   <input type="checkbox" />
                   <div className="collapse-title font-medium">
                     Apa itu PetSpace?

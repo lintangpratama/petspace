@@ -1,6 +1,6 @@
 export default function Search(props) {
   return (
-    <div className="flex flex-col w-full mr-2">
+    <div className="flex flex-col w-full mr-2 mt-3">
       <div class="w-full">
         <form action="/space" className={props.currentPage === 'home' ? 'bg-search-bg w-full px-4 py-3 rounded-md text-sm font-serif mt-7' : 'bg-search-bg w-full px-3 py-2 rounded-md text-sm font-serif pt-2'}>
           <input

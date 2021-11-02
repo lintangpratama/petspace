@@ -169,10 +169,10 @@ export default function Account() {
                 </Swiper>
 
                 <div className="mt-10">
-                  <h1 className="font-normal text-blue-main font-sans text-base">
+                  <h1 className="font-semibold font-secondary text-blue-main text-base">
                     Space Terbaik Bulan Ini
                   </h1>
-                  <p className="text-xs font-serif text-gray-500">
+                  <p className="text-xs font-secondary text-gray-500">
                     lorem ipsum dolor sit amet
                   </p>
                 </div>
