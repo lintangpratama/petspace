@@ -61,24 +61,24 @@ export default function Template() {
                   </div>
                 </button> */}
                 <div className="pt-7"></div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow w-full mt-4 py-0">
+                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4 py-0">
                   <input type="checkbox" />
-                  <div className="collapse-title font-medium">
+                  <div className="collapse-title">
                     Apa itu PetSpace?
                   </div>
                   <div className="collapse-content ">
-                    <p>
+                    <p className="text-sm">
                       lorem ipsum dolor sit amet.
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow w-full mt-4">
+                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
                   <input type="checkbox" />
-                  <div className="collapse-title font-medium">
+                  <div className="collapse-title text-md">
                     Mengapa kami membangun PetSpace?
                   </div>
                   <div className="collapse-content ">
-                    <p>
+                    <p className="text-sm">
                       Kami memahami bahwa hewanmu merupakan hal yang sangat
                       berharga bagimu. Kami membangun PetSpace dengan tujuan
                       untuk membantumu untuk mencari tempat penitipan hewan yang

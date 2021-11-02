@@ -17,8 +17,8 @@ export default function Space() {
                 <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pt-8 pb-5 drop-shadow-bottom shadow-md">
                   <Search currentPage="space" />
                   <div className="flex">
-                    <div class="dropdown dropdown-end">
-                      <div tabindex="0" class="m-1 btn">
+                    <div class="dropdown dropdown-end bg-white border-0">
+                      <div tabindex="0" class="m-1 btn bg-white border-0 hover:bg-search-bg focus:bg-blue-secondary mt-3">
                         <svg
                           width="19"
                           height="20"
@@ -34,19 +34,19 @@ export default function Space() {
                       </div>
                       <ul
                         tabindex="0"
-                        class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
+                        class="shadow menu dropdown-content bg-base-100 rounded-box w-52"
                       >
-                        <li>
+                        <li class="font-secondary text-sm">
                           <Link href="/space?pet=anjing">Anjing</Link>
                         </li>
-                        <li>
+                        <li className="font-secondary text-sm">
                           <Link href="/space?pet=kucing">Kucing</Link>
                         </li>
                       </ul>
                     </div>
 
-                    <div className="dropdown dropdown-end mt-1">
-                      <button className="mx-2 mt-1 dropdown-content">
+                    <div className="dropdown dropdown-end mt-1 bg-white">
+                      <button className="mx-2 mt-1 dropdown-content bg-white border-0">
                         <svg
                           width="19"
                           height="20"
@@ -62,22 +62,7 @@ export default function Space() {
                       </button>
                     </div>
 
-                    <Link href="/">
-                      <button className="mx-2">
-                        <svg
-                          width="19"
-                          height="20"
-                          viewBox="0 0 19 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0.293 7.707L7.293 0.707002C7.6835 0.31662 8.3165 0.31662 8.707 0.707002L15.707 7.707C15.8945 7.89449 16 8.14881 16 8.414V18C16 18.5523 15.5523 19 15 19H10V12H6V19H1C0.447715 19 0 18.5523 0 18V8.414C0 8.14881 0.105451 7.89449 0.293 7.707Z"
-                            fill="#429FF2"
-                          />
-                        </svg>
-                      </button>
-                    </Link>
+                    
                   </div>
                 </div>
 
