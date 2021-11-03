@@ -23,7 +23,7 @@ export default function Account() {
             <div className="flex flex-col h-full">
               <div className="mx-5 my-10">
                 <div className="flex flex-row">
-                  <img src="/petspace.png" className="w-14 rounded"></img>
+                  <img src="/new-logo.png" className="w-14 rounded"></img>
                 </div>
                 <div className="mt-10">
                   <h1 className="font-normal font-main text-gray-900 text-2xl">

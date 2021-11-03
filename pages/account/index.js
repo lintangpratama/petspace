@@ -1,5 +1,7 @@
+import Link from "next/link";
 import Head from "@/components/Head";
 import Bar from "../../components/Bar";
+
 
 export default function Template() {
   return (
@@ -31,21 +33,7 @@ export default function Template() {
                     </email>
                   </div>
                 </div>
-                {/* Akun Content*/}
-                <div className="userName-box">
-                  <h4 className="text-lg tracking-tight font-medium">
-                    Username anda
-                  </h4>
-                  <p
-                    className="mt-2"
-                    style={{ color: "rgba(124, 124, 128, 0.8)" }}
-                  >
-                    Ekositubandar
-                  </p>
-                  <div className="mt-2">
-                    <hr />
-                  </div>
-                </div>
+
                 {/* Akun Setting */}
                 <div className="setting-box mt-5">
                   <h4 className="text-lg tracking-tight font-medium">Akun</h4>
@@ -53,18 +41,39 @@ export default function Template() {
                     <hr />
                   </div>
                   {/* Button Icon Setting */}
-                  <a href="#">
+                  <Link href="/account/change-password">
                     <div className="mt-3" style={{ display: "flex" }}>
                       <img src="/setting.svg"></img>
                       <p
                         className="mx-5"
                         style={{ color: "rgba(124, 124, 128, 0.8)" }}
                       >
-                        Pengaturan
+                        Ubah Password
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
+
+                {/* Setting khusus penitipan */}
+                <div className="setting-box mt-5">
+                  <h4 className="text-lg tracking-tight font-medium">Space</h4>
+                  <div className="mt-2">
+                    <hr />
+                  </div>
+                  {/* Button Input Space */}
+                  <Link href="/account/input-space">
+                    <div className="mt-3" style={{ display: "flex" }}>
+                      <img src="/setting.svg"></img>
+                      <p
+                        className="mx-5"
+                        style={{ color: "rgba(124, 124, 128, 0.8)" }}
+                      >
+                        Masukkan Data Tempat Penitipan
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+
                 {/* Kontak Kami */}
                 <div className="setting-box mt-5">
                   <h4 className="text-lg tracking-tight font-medium">
