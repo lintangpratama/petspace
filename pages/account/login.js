@@ -2,27 +2,7 @@ import Head from "@/components/Head";
 import Back from "@/components/Back";
 import Link from "next/link";
 
-// const App = () => {
-//   const [values, setValues] = React.useState({
-//     password: "",
-//     showPassword: false,
-//   });
 
-//   const handleClickShowPassword = () => {
-//     setValues({ ...values, showPassword: !values.showPassword });
-//   };
-
-//   const handleMouseDownPassword = (event) => {
-//     event.preventDefault();
-//   };
-
-//   const handlePasswordChange = (prop) => (event) => {
-//     setValues({ ...values, [prop]: event.target.value });
-//   };
-
-// };
-// Gagalll
-//
 export default function Template() {
   return (
     <div className="flex flex-col">
@@ -63,8 +43,8 @@ export default function Template() {
                       placeholder="Masukkan email anda"
                       type="search"
                       name="email"
-                      class="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                      autocomplete="off"
+                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
                   </div>
@@ -82,8 +62,8 @@ export default function Template() {
                       placeholder="Masukkan password anda"
                       type="password"
                       name="password"
-                      class="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                      autocomplete="off"
+                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
                   </div>
@@ -104,7 +84,7 @@ export default function Template() {
                       Belum punya akun?{" "}
                       <a>
                         <span
-                          className="font-semibold text-md hover:underline"
+                          className="font-semibold text-md cursor-pointer hover:underline"
                           style={{ color: "#429FF2" }}
                         >
                           Daftar di sini
@@ -115,28 +95,9 @@ export default function Template() {
                   </div>
                 </form>
                 <div className="w-full h-96"></div>
-                {/* show hide password gagalll  */}
-                {/* <Input
-        type={values.showPassword ? "text" : "password"}
-        onChange={handlePasswordChange("password")}
-        value={values.password}
-        endAdornment={
-          <InputAdornment position="end">
-            <IconButton
-              onClick={handleClickShowPassword}
-              onMouseDown={handleMouseDownPassword}
-            >
-              {values.showPassword ? <Visibility /> : <VisibilityOff />}
-            </IconButton>
-          </InputAdornment>
-        }
-      /> */}
-                {/*  */}
-                {/* End Div */}
+              
               </div>
             </div>
-            {/* <Bar currentPage="account"/>
-            <div className="w-full h-14"></div> */}
           </div>
         </div>
       </body>

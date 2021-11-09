@@ -41,8 +41,8 @@ export default function Template() {
                       placeholder="Masukkan email anda"
                       type="password"
                       name="q"
-                      class="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                      autocomplete="off"
+                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
                   </div>
@@ -60,8 +60,8 @@ export default function Template() {
                       placeholder="Masukkan password anda"
                       type="password"
                       name="q"
-                      class="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                      autocomplete="off"
+                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
                   </div>
@@ -84,8 +84,8 @@ export default function Template() {
                       placeholder="Masukkan No NIK anda"
                       type=""
                       name="q"
-                      class="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                      autocomplete="off"
+                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
                   </div>
@@ -109,7 +109,7 @@ export default function Template() {
                       placeholder="Masukkan Tanggal Lahir anda"
                       id="date"
                       name="q"
-                      className="py-2 text-sm text-form rounded-md pl-4 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2 "
+                      className="py-2 text-sm text-form rounded-md pl-4 pr-3 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2 "
                       autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
@@ -133,16 +133,16 @@ export default function Template() {
                       placeholder="Masukkan alamat anda (sesuai dengan KTP)"
                       type=""
                       name="q"
-                      class="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                      autocomplete="off"
+                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      autoComplete="off"
                       style={{ width: "100%", textIndent: "24px" }}
                     ></input>
                   </div>
 
                   {/* Upload foto wajah */}
-                  <label class="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
-                    <i class="fas fa-camera fa-2x"></i>
-                    <span class="mt-1 text-xs leading-normal">
+                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                    <i className="fas fa-camera fa-2x"></i>
+                    <span className="mt-1 text-xs leading-normal">
                       Foto Wajah
                     </span>
                     <input
@@ -150,15 +150,15 @@ export default function Template() {
                       id="petImg"
                       name="petImg"
                       accept="image/png, image/gif, image/jpeg"
-                      class="hidden"
+                      className="hidden"
                       required
                     />
                   </label>
 
                   {/* Upload foto ktp */}
-                  <label class="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
-                    <i class="fas fa-camera fa-2x"></i>
-                    <span class="mt-1 text-xs leading-normal">
+                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                    <i className="fas fa-camera fa-2x"></i>
+                    <span className="mt-1 text-xs leading-normal">
                       Foto KTP
                     </span>
                     <input
@@ -166,24 +166,17 @@ export default function Template() {
                       id="petImg"
                       name="petImg"
                       accept="image/png, image/gif, image/jpeg"
-                      class="hidden"
+                      className="hidden"
                       required
                     />
                   </label>
                   {/* Button Sign */}
-                  <a href="#">
-                    <div className="group box w-100% bg-blue h-lg rounded-md mt-8">
-                      <div className="content">
-                        <p
-                          className="tracking-tight text-white text-lg font-semibold  text-center leading-3"
-                          style={{ lineHeight: "3" }}
-                        >
-                          Registrasi Akun
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                  {/*  */}
+                  <input
+                    type="submit"
+                    value="Registrasi"
+                    className="mt-10 px-4 py-3 bg-blue-main text-white font-medium w-full cursor-pointer border-2 border-blue-main rounded-lg ease-linear duration-150 hover:text-blue-main hover:border-2 hover:bg-white"
+                  ></input>
+                  
                   <div className="text-center mt-5 text-sm">
                     {/*  */}
                     <Link href="/account/login">

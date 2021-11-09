@@ -14,7 +14,7 @@ export default function Cat() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossorigin
+          crossOrigin
         ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap"
@@ -25,7 +25,7 @@ export default function Cat() {
       <body className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col h-full">
               <div className="mx-5 my-10">
                 <Back />
 
@@ -58,6 +58,7 @@ export default function Cat() {
                     </button>
                   </div>
                 </div>
+                <div className="h-24 w-full"></div>
               </div>
             </div>
           </div>

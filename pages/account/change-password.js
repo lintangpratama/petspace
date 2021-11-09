@@ -30,8 +30,8 @@ export default function Template() {
                         placeholder="Masukkan password kamu"
                         type="password"
                         name="password"
-                        class="py-2 text-sm text-form rounded-md pl-12 w-full focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                        autocomplete="off"
+                        className="py-2 text-sm text-form rounded-md pl-12 w-full focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                        autoComplete="off"
                       ></input>
                     </div>
                     <div className="mt-3 relative">
@@ -45,8 +45,8 @@ export default function Template() {
                         placeholder="Masukkan password baru kamu"
                         type="password"
                         name="password"
-                        class="py-2 text-sm text-form rounded-md pl-12 w-full focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                        autocomplete="off"
+                        className="py-2 text-sm text-form rounded-md pl-12 w-full focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                        autoComplete="off"
                       ></input>
                     </div>
 
@@ -61,8 +61,8 @@ export default function Template() {
                         placeholder="Verifikasi password baru kamu"
                         type="password"
                         name="password"
-                        class="py-2 text-sm text-form rounded-md pl-12 w-full focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
-                        autocomplete="off"
+                        className="py-2 text-sm text-form rounded-md pl-12 w-full focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                        autoComplete="off"
                       ></input>
                     </div>
 

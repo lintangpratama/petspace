@@ -17,8 +17,8 @@ export default function Space() {
                 <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pt-8 pb-5 drop-shadow-bottom shadow-md">
                   <Search currentPage="space" />
                   <div className="flex">
-                    <div class="dropdown dropdown-end bg-white border-0">
-                      <div tabindex="0" class="m-1 btn bg-white border-0 hover:bg-search-bg focus:bg-blue-secondary mt-3">
+                    <div className="dropdown dropdown-end bg-white border-0">
+                      <div tabIndex="0" className="m-1 btn bg-white border-0 hover:bg-search-bg focus:bg-blue-secondary mt-3">
                         <svg
                           width="19"
                           height="20"
@@ -33,10 +33,10 @@ export default function Space() {
                         </svg>
                       </div>
                       <ul
-                        tabindex="0"
-                        class="shadow menu dropdown-content bg-base-100 rounded-box w-52"
+                        tabIndex="0"
+                        className="shadow menu dropdown-content bg-base-100 rounded-box w-52"
                       >
-                        <li class="font-secondary text-sm">
+                        <li className="font-secondary text-sm">
                           <Link href="/space?pet=anjing">Anjing</Link>
                         </li>
                         <li className="font-secondary text-sm">
@@ -67,7 +67,8 @@ export default function Space() {
                 </div>
 
                 <div className="mt-28 mx-5">
-                  <div className="flex mt-5 shadow-md rounded-lg">
+                  <Link href="space/1">
+                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                     <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
                     <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
                       <h3 className="text-blue-main font-medium text-base">
@@ -81,8 +82,10 @@ export default function Space() {
                       </p>
                     </div>
                   </div>
+                  </Link>
 
-                  <div className="flex mt-5 shadow-md rounded-lg ">
+                  <Link href="space/1">
+                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                     <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
                     <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
                       <h3 className="text-blue-main font-medium text-base">
@@ -96,8 +99,10 @@ export default function Space() {
                       </p>
                     </div>
                   </div>
+                  </Link>
 
-                  <div className="flex mt-5 shadow-md rounded-lg ">
+                  <Link href="space/1">
+                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                     <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
                     <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
                       <h3 className="text-blue-main font-medium text-base">
@@ -111,8 +116,10 @@ export default function Space() {
                       </p>
                     </div>
                   </div>
+                  </Link>
 
-                  <div className="flex mt-5 shadow-md rounded-lg ">
+                  <Link href="space/1">
+                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                     <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
                     <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
                       <h3 className="text-blue-main font-medium text-base">
@@ -126,8 +133,10 @@ export default function Space() {
                       </p>
                     </div>
                   </div>
+                  </Link>
 
-                  <div className="flex mt-5 shadow-md rounded-lg ">
+                  <Link href="space/1">
+                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                     <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
                     <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
                       <h3 className="text-blue-main font-medium text-base">
@@ -141,8 +150,10 @@ export default function Space() {
                       </p>
                     </div>
                   </div>
+                  </Link>
 
-                  <div className="flex mt-5 shadow-md rounded-lg ">
+                  <Link href="space/1">
+                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                     <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
                     <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
                       <h3 className="text-blue-main font-medium text-base">
@@ -156,6 +167,7 @@ export default function Space() {
                       </p>
                     </div>
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import Head from "@/components/Head";
 import Back from "@/components/Back";
 
+
 String.prototype.replaceAt = function (index, replacement) {
   return (
     this.substr(0, index) +
@@ -73,12 +74,12 @@ export default function Template() {
                     <option value="male">Laki-laki</option>
                     <option value="female">Perempuan</option>
                   </select>
-                  <div class="form-control mt-3">
-                    <label class="input-group input-group-md">
+                  <div className="form-control mt-3">
+                    <label className="input-group input-group-md">
                       <input
                         type="text"
                         placeholder="Umur Hewan"
-                        class="input input-bordered input-md text-search-font border-blue-secondary border-2 w-full"
+                        className="input input-bordered input-md text-search-font border-blue-secondary border-2 w-full"
                         required
                       />
                       <span className="bg-blue-secondary">tahun</span>
@@ -88,33 +89,31 @@ export default function Template() {
                     id="dateIn"
                     name="dateIn"
                     type="date"
-                    value={minDate}
                     min={minDate}
                     placeholder="Tanggal Mulai Penitipan"
-                    className="px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
+                    className="relative px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
                     required
                   />
                   <input
                     id="dateOut"
                     name="dateOut"
                     type="date"
-                    value={maxDate}
                     min={maxDate}
                     placeholder="Tanggal Mulai Penitipan"
-                    className="px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
+                    className="relative px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
                     required
                   />
 
-                  <label class="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
-                    <i class="fas fa-camera fa-2x"></i>
-                    <span class="mt-1 text-xs leading-normal">
+                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                    <i className="fas fa-camera fa-2x"></i>
+                    <span className="mt-1 text-xs leading-normal">
                       Upload Foto Hewan
                     </span>
                     <input
                       type="file"
                       id="petImg"
                       name="petImg"
-                      accept="image/png, image/gif, image/jpeg"
+                      className="hidden"
                       required
                     />
                   </label>
@@ -127,7 +126,7 @@ export default function Template() {
                   ></textarea>
 
                   <div className="flex mt-10">
-                    <img src="/infoIcon.svg" className="mr-3"></img>
+                    <img src="/infoIcon.svg" alt="" className="mr-3"></img>
                     <p>
                       Periksa kembali data hewan kamu terisi dengan benar
                       sebelum lanjut

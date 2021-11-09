@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Back from "@/components/Back";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { FreeMode, Pagination } from "swiper";
@@ -77,7 +78,7 @@ export default function SpaceDetails() {
                   borderRadius: "60px , 60px , 0px,0px",
                   position: "relative",
                   top: "-20px",
-                  zIndex: "999",
+                  zIndex: "9",
                 }}
               >
                 <div className="mx-5 my-7">
@@ -177,15 +178,15 @@ export default function SpaceDetails() {
 
                   {/* button */}
                   <div>
-                    <a href="#">
-                      <div className="w-full bg-blue h-lg text-white border-2 border-blue-main rounded-md mt-12 hover:bg-white hover:text-blue-main hover:border-2 hover:border-blue-main duration-100">
+                    <Link href="request/1">
+                      <div className="w-full bg-blue h-lg cursor-pointer text-white border-2 border-blue-main rounded-md mt-12 hover:bg-white hover:text-blue-main hover:border-2 hover:border-blue-main duration-100">
                         <div className="content">
                           <p className="tracking-tight  text-lg font-semibold  text-center leading-3" style={{lineHeight:"3"}}>
                             Request Space
                           </p>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

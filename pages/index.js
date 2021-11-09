@@ -109,7 +109,7 @@ export default function Account() {
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
-                            Abdur Rofi Maulidin
+                            Penitipan Hewan Cantika
                           </h3>
                           <h4 className="text-yellow-pet font-medium text-sm">
                             Rp28.000/hari
@@ -121,55 +121,69 @@ export default function Account() {
                       </div>
                     </Link>
                   </SwiperSlide>
-
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Penitipan Hewan Cantika
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Penitipan Hewan Cantika
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Penitipan Hewan Cantika
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
+                    </Link>
+                  </SwiperSlide>{" "}
                 </Swiper>
 
                 <div className="mt-10">
@@ -198,69 +212,89 @@ export default function Account() {
                   }}
                   className="mySwiper mt-3"
                 >
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Abdur Rofi Maulidin
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Abdur Rofi Maulidin
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Abdur Rofi Maulidin
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Abdur Rofi Maulidin
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
                 </Swiper>
               </div>

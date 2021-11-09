@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
-import Back from '@/components/Back';
+import Back from "@/components/Back";
 import Head from "next/head";
 import Link from "next/link";
 
 export default function Cat() {
   const router = useRouter();
-  const name = 'Lintang';
+  const name = "Lintang";
 
   return (
     <div className="flex flex-col">
@@ -16,7 +16,7 @@ export default function Cat() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossorigin
+          crossOrigin
         ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap"
@@ -27,9 +27,9 @@ export default function Cat() {
       <body className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col h-full">
               <div className="mx-5 my-10">
-              <Back />
+                <Back />
 
                 <div className="mt-10">
                   <h1 className="font-semibold font-main text-gray-900 text-2xl">
@@ -54,12 +54,13 @@ export default function Cat() {
                     </div>
 
                     <Link href="/space">
-                        <button className="py-2.5 w-36 text-white text-xs bg-blue-main rounded-lg mt-8 md:text-sm mx-auto">
-                            <a>Browse Space</a>
-                        </button>
+                      <button className="py-2.5 w-36 text-white text-xs bg-blue-main rounded-lg mt-8 md:text-sm mx-auto">
+                        <a>Browse Space</a>
+                      </button>
                     </Link>
                   </div>
                 </div>
+                <div className="h-24 w-full"></div>
               </div>
             </div>
           </div>

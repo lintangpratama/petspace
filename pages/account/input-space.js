@@ -60,9 +60,9 @@ export default function InputSpace() {
                     className="px-4 py-3 mt-3 h-36 w-full text border-opacity-100 border-2 rounded-lg border-blue-secondary"
                   ></textarea>
 
-                  <label class="w-full mt-3 flex flex-col items-center px-4 py-6 border-2 bg-white rounded-md tracking-wide border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
-                    <i class="fas fa-camera fa-2x"></i>
-                    <span class="mt-1 text-xs leading-normal">
+                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 border-2 bg-white rounded-md tracking-wide border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                    <i className="fas fa-camera fa-2x"></i>
+                    <span className="mt-1 text-xs leading-normal">
                       Upload Foto Space 1
                     </span>
                     <input
@@ -70,14 +70,14 @@ export default function InputSpace() {
                       id="spaceImg1"
                       name="spaceImg1"
                       accept="image/png, image/gif, image/jpeg"
-                      class="hidden"
+                      className="hidden"
                       required
                     />
                   </label>
 
-                  <label class="w-full mt-3 flex flex-col items-center px-4 py-6 border-2 bg-white rounded-md tracking-wide border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
-                    <i class="fas fa-camera fa-2x"></i>
-                    <span class="mt-1 text-xs leading-normal">
+                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 border-2 bg-white rounded-md tracking-wide border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                    <i className="fas fa-camera fa-2x"></i>
+                    <span className="mt-1 text-xs leading-normal">
                       Upload Foto Space 2
                     </span>
                     <input
@@ -85,14 +85,14 @@ export default function InputSpace() {
                       id="spaceImg2"
                       name="spaceImg2"
                       accept="image/png, image/gif, image/jpeg"
-                      class="hidden"
+                      className="hidden"
                       required
                     />
                   </label>
 
-                  <label class="w-full mt-3 flex flex-col items-center px-4 py-6 border-2 bg-white rounded-md tracking-wide border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
-                    <i class="fas fa-camera fa-2x"></i>
-                    <span class="mt-1 text-xs leading-normal">
+                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 border-2 bg-white rounded-md tracking-wide border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                    <i className="fas fa-camera fa-2x"></i>
+                    <span className="mt-1 text-xs leading-normal">
                       Upload Foto Space 3
                     </span>
                     <input
@@ -100,7 +100,7 @@ export default function InputSpace() {
                       id="spaceImg3"
                       name="spaceImg3"
                       accept="image/png, image/gif, image/jpeg"
-                      class="hidden"
+                      className="hidden"
                       required
                     />
                   </label>
