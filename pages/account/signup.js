@@ -149,6 +149,7 @@ export default function Template() {
                       type="file"
                       id="petImg"
                       name="petImg"
+                      accept="image/png, image/gif, image/jpeg"
                       class="hidden"
                       required
                     />
@@ -164,6 +165,7 @@ export default function Template() {
                       type="file"
                       id="petImg"
                       name="petImg"
+                      accept="image/png, image/gif, image/jpeg"
                       class="hidden"
                       required
                     />

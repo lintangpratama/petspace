@@ -42,7 +42,7 @@ export default function Template() {
                   </div>
                   {/* Button Icon Setting */}
                   <Link href="/account/change-password">
-                    <div className="mt-3" style={{ display: "flex" }}>
+                    <div className="mt-3 cursor-pointer" style={{ display: "flex" }}>
                       <img src="/setting.svg"></img>
                       <p
                         className="mx-5"
@@ -62,7 +62,7 @@ export default function Template() {
                   </div>
                   {/* Button Input Space */}
                   <Link href="/account/input-space">
-                    <div className="mt-3" style={{ display: "flex" }}>
+                    <div className="mt-3 cursor-pointer" style={{ display: "flex" }}>
                       <img src="/setting.svg"></img>
                       <p
                         className="mx-5"
@@ -109,7 +109,7 @@ export default function Template() {
                 </div>
                 {/* Log out */}
                 <a href="/login">
-                  <div className=" w-100% bg-transparent h-lg border-abu border-2 rounded-md mt-8 hover:bg-blue">
+                  <div className=" w-100% bg-transparent h-lg border-abu border-2 rounded-md mt-8 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white">
                     <div className="content">
                       <p
                         className="tracking-tight text-blue text-lg font-semibold  text-center leading-3 group-hover:text-white"

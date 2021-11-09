@@ -30,10 +30,10 @@ export default function Cat() {
                 <Back />
 
                 <div className="mt-10">
-                  <h1 className="font-normal text-blue-main font-sans text-2xl">
+                  <h1 className="font-normal font-main text-blue-main text-2xl">
                     Space Status
                   </h1>
-                  <p className="text-sm font-serif text-gray-500">
+                  <p className="text-sm font-serif text-gray-500 mt-2">
                     Kamu bisa melihat status penitipan hewanmu di sini
                   </p>
                 </div>
@@ -44,17 +44,16 @@ export default function Cat() {
                     className="w-40 md:w-52"
                   ></img>
                   <div className="flex flex-col w-9/12 justify-between">
-                    <h2 className="text-white text-4xl font-semibold md:text-base text-center">
+                    <h2 className="text-white font-semibold md:text-base text-center" style={{fontSize: "25px"}}>
                       Kitty
                     </h2>
-                    <div className="text-sm text-center font-serif text-white w-full my-4">
-                      <p>Pemilik Space: Lintang Aji Yoga Pratama</p>
-                      <p>Tanggal Masuk: 19 Oktober 2021</p>
-                      <p>Tanggal Keluar: 6 November 2021</p>
+                    <div className="text-base text-center font-serif text-white w-full my-6">
+                      <p>Lintang Aji Yoga Pratama</p>
+                      <p>19 Oktober 2021 - 6 November 2021</p>
                       <p>Status: Accepted</p>
                     </div>
 
-                    <button className="py-1.5 w-36 text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm mx-auto">
+                    <button className="py-2.5 w-36 text-white font-medium bg-yellow-pet rounded-xl mt-3 md:text-sm mx-auto" style={{fontSize: "15px", width: "180px"}}>
                       <a href={`https://api.whatsapp.com/send?phone=6285591639594&text=Test${name}`}>Chat via WhatsApp</a>
                     </button>
                   </div>

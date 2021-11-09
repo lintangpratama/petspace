@@ -54,7 +54,7 @@ export default function Cat() {
                     </div>
 
                     <Link href="/space">
-                        <button className="py-2.5 w-36 text-white text-xs bg-blue-main rounded-lg mt-12 md:text-sm mx-auto">
+                        <button className="py-2.5 w-36 text-white text-xs bg-blue-main rounded-lg mt-8 md:text-sm mx-auto">
                             <a>Browse Space</a>
                         </button>
                     </Link>

@@ -7,7 +7,6 @@ import SwiperCore, { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
 SwiperCore.use([FreeMode, Pagination]);
 
 export default function Account() {
@@ -29,13 +28,13 @@ export default function Account() {
                   <h1 className="font-normal font-main text-gray-900 text-2xl">
                     {user ? `Selamat datang, ${user}` : "Selamat datang, Guest"}
                   </h1>
-                  <p className="text-sm font-secondary text-gray-500">
-                    lorem ipsum dolor sit amet
+                  <p className="text-sm mt-3 font-secondary text-gray-500 leading-6">
+                    Temukan penitipan hewan yang cocok untuk hewan kesayanganmu.
                   </p>
                 </div>
 
                 {/*Input search*/}
-                <Search currentPage="home"/>
+                <Search currentPage="home" />
 
                 <Swiper
                   slidesPerView={1.15}
@@ -50,7 +49,7 @@ export default function Account() {
                           Hai! Yuk lihat status penitipan kucingmu
                         </h2>
                         <Link href="/status/cat">
-                          <button className="py-1.5 w-20 font-secondary text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
+                          <button className="py-1.5 w-20 font-secondary text-white text-xs bg-yellow-pet rounded-xl mt-0 md:text-sm">
                             <a>Check</a>
                           </button>
                         </Link>
@@ -80,7 +79,7 @@ export default function Account() {
                     Space di Semarang
                   </h1>
                   <p className="text-xs font-secondary text-gray-500">
-                    lorem ipsum dolor sit amet
+                    Penitipan terdekat di Semarang
                   </p>
                 </div>
 
@@ -101,23 +100,28 @@ export default function Account() {
                   }}
                   className="mySwiper mt-3"
                 >
-
-                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
-                    <div className="flex flex-col">
-                      <img src="/img.png" className="rounded-t-xl h-1/3"></img>
-                      <div className="flex flex-col text-left mx-2 my-3 h-2/3">
-                        <h3 className="text-blue-main font-medium text-base">
-                          Abdur Rofi Maulidin
-                        </h3>
-                        <h4 className="text-yellow-pet font-medium text-sm">
-                          Rp28.000/hari
-                        </h4>
-                        <p className="text-xs font-light text-gray-500 mt-1">
-                          Kota Semarang
-                        </p>
+                  <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2 cursor-pointer">
+                    <Link href="space/1">
+                      <div className="flex flex-col">
+                        <img
+                          src="/img.png"
+                          className="rounded-t-xl h-1/3"
+                        ></img>
+                        <div className="flex flex-col text-left mx-2 my-3 h-2/3">
+                          <h3 className="text-blue-main font-medium text-base">
+                            Abdur Rofi Maulidin
+                          </h3>
+                          <h4 className="text-yellow-pet font-medium text-sm">
+                            Rp28.000/hari
+                          </h4>
+                          <p className="text-xs font-light text-gray-500 mt-1">
+                            Kota Semarang
+                          </p>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </SwiperSlide>
+
                   <SwiperSlide className="text-center bg-white shadow-md rounded-xl h-full border-2">
                     <div className="flex flex-col">
                       <img src="/img.png" className="rounded-t-xl h-1/3"></img>
@@ -170,10 +174,10 @@ export default function Account() {
 
                 <div className="mt-10">
                   <h1 className="font-semibold font-secondary text-blue-main text-base">
-                    Space Terbaik Bulan Ini
+                    Space di Jakarta
                   </h1>
                   <p className="text-xs font-secondary text-gray-500">
-                    lorem ipsum dolor sit amet
+                    Penitipan terdekat di Jakarta
                   </p>
                 </div>
 

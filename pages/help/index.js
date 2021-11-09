@@ -9,7 +9,7 @@ export default function Template() {
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col">
-              <div className="mx-5 my-10">
+              <div className="mx-5 my-10 h-screen">
                 {/* Mulai ngoding di sini */}
                 {/* Title */}
                 <div className="font-normal font-main text-gray-900 text-2xl">
@@ -92,7 +92,6 @@ export default function Template() {
               </div>
             </div>
 
-            <div className="w-full h-96"></div>
             <Bar currentPage="help" />
           </div>
         </div>

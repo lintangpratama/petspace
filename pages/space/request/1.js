@@ -114,7 +114,7 @@ export default function Template() {
                       type="file"
                       id="petImg"
                       name="petImg"
-                      class="hidden"
+                      accept="image/png, image/gif, image/jpeg"
                       required
                     />
                   </label>

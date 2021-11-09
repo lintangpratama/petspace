@@ -18,6 +18,7 @@ module.exports = {
         "blue-main": "#429FF2",
         "blue-secondary": "rgba(66, 159, 242, 0.1)",
         "blue-secondary-hover": "rgba(66, 159, 242, 0.3)",
+        "blue-space-detail": "#3b8fd8",
         "yellow-pet": "#F4AB5C",
         "search-bg": "#F5F5F5",
         "search-font": "#88888C",
