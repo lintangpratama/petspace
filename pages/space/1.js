@@ -82,7 +82,7 @@ export default function SpaceDetails() {
                 }}
               >
                 <div className="mx-5 my-7">
-                  <h4 className="text-3xl tracking-tight font-semibold text-blue">
+                  <h4 className="text-3xl tracking-tight font-semibold text-blue-main">
                     Penitipan Hewan Cantika
                   </h4>
                   {/* Location */}
@@ -105,11 +105,10 @@ export default function SpaceDetails() {
                     <div className="flex">
                       <img
                         src="/logo-pabrik.png"
-                        className=""
-                        style={{ width: "18%" }}
+                        className="w-16 h-16"
                       ></img>
                       {/*  */}
-                      <div className="mt-3">
+                      <div className="mt-2">
                         <p
                           className="mx-5 tracking-tight text-xl font-medium"
                           style={{ lineHeight: "25px" }}
@@ -130,7 +129,7 @@ export default function SpaceDetails() {
                   {/* Alamat */}
                   <div className="mt-8">
                     <p
-                      className="tracking-tight text-xl font-medium"
+                      className="tracking-tight text-xl font-medium text-gray-800"
                       style={{ lineHeight: "25px" }}
                     >
                       Alamat
@@ -147,32 +146,32 @@ export default function SpaceDetails() {
                   {/* Fasilitas */}
                   <div className="mt-8">
                     <p
-                      className="tracking-tight text-xl font-medium"
+                      className="tracking-tight text-xl font-medium text-gray-800"
                       style={{ lineHeight: "25px" }}
                     >
-                      Fasilitas
+                      Deskripsi
                     </p>
                     <p
                       className="tracking-tight text-md mt-3"
                       style={{ color: "rgba(66, 62, 62, 0.7)" }}
                     >
-                      Kandang, Makanan, Obat-obatan, Grooming, Mainan
+                      Fasilitas: Kandang, Makanan, Obat-obatan, Grooming, Mainan
                     </p>
                   </div>
 
                   {/* Info Tambahan */}
                   <div className="mt-8">
                     <p
-                      className="tracking-tight text-xl font-medium"
+                      className="tracking-tight text-xl font-medium text-gray-800"
                       style={{ lineHeight: "25px" }}
                     >
-                      Info Tambahan
+                      Menerima Penitipan
                     </p>
                     <p
                       className="tracking-tight text-md mt-3"
                       style={{ color: "rgba(66, 62, 62, 0.7)" }}
                     >
-                      Kami tidak menerima jasa penitipan anjing
+                      Anjing dan Kucing
                     </p>
                   </div>
 

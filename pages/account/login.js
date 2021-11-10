@@ -40,16 +40,16 @@ export default function Login() {
                       </a>
                     </span>
                     <input
-                      placeholder="Masukkan email anda"
-                      type="search"
+                      placeholder="Masukkan Email Kamu"
+                      type="email"
                       name="email"
-                      className="py-2 text-sm bg-background bg-opacity-40 border-blue-secondary text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu border-abu border-2"
+                      className="py-2 text-sm bg-background bg-opacity-40 border-blue-secondary text-form rounded-md pl-10 focus:outline-none focus:ring focus:border-blue-50 bg-abu border-abu border-2"
                       autoComplete="off"
                       style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
                   {/* Masukkan Password */}
-                  <div className="relative mt-5">
+                  <div className="relative mt-3">
                     <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                       <a
                         type=""
@@ -59,10 +59,10 @@ export default function Login() {
                       </a>
                     </span>
                     <input
-                      placeholder="Masukkan password anda"
+                      placeholder="Masukkan Password Kamu"
                       type="password"
                       name="password"
-                      className="py-2 text-sm text-form bg-background border-blue-secondary bg-opacity-40 rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm text-form bg-background border-blue-secondary bg-opacity-40 rounded-md pl-10 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
                       style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
@@ -71,8 +71,13 @@ export default function Login() {
                   {/* Button Sign */}
                   <input
                     type="submit"
-                    value="Login"
+                    value="Login Sebagai Penitip"
                     className="mt-10 px-4 py-3 bg-blue-main text-white font-medium w-full cursor-pointer border-2 border-blue-main rounded-lg ease-linear duration-150 hover:text-blue-main hover:border-2 hover:bg-white"
+                  ></input>
+                  <input
+                    type="submit"
+                    value="Login Sebagai Tempat Penitipan"
+                    className="mt-2 px-4 py-3 bg-white text-blue-main font-medium w-full cursor-pointer border-2 border-blue-main rounded-lg ease-linear duration-150 hover:text-white hover:border-2 hover:bg-blue-main"
                   ></input>
                   {/*  */}
                   <div className="text-center mt-5 text-sm">

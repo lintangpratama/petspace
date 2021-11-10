@@ -5,7 +5,11 @@ export default function StatusCard(props) {
   if (props.pet === "blank") {
     return (
       <div className="flex flex-col justify-center rounded-xl items-center text-center px-4 py-7 mt-10 md:py-10">
-        <img src="/status-card/dog-sleep.png" className="w-40 md:w-52"></img>
+        <img
+          src="/status-card/dog-sleep.png"
+          className="w-40 md:w-52"
+          loading="lazy"
+        ></img>
         <div className="flex flex-col w-11/12 justify-between mt-2">
           <h2 className="text-black text-2xl font-semibold text-center">
             Ups!
@@ -33,6 +37,7 @@ export default function StatusCard(props) {
               : "/status-card/dog-status.png"
           }
           className="w-40 md:w-52"
+          loading="lazy"
         ></img>
         <div className="flex flex-col w-11/12 justify-between">
           <h2

@@ -65,7 +65,7 @@ export default function Template() {
                   <select
                     id="petSex"
                     name="petSex"
-                    className="select select-bordered w-full font-normal  border-blue-secondary border-2 mt-3 "
+                    className="select select-bordered w-full font-normal border-blue-secondary border-2 mt-3 "
                     required
                   >
                     <option value="" disabled="disabled" selected="selected">
@@ -91,7 +91,7 @@ export default function Template() {
                     type="date"
                     min={minDate}
                     placeholder="Tanggal Mulai Penitipan"
-                    className="relative px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
+                    className="relative px-4 bg-white py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
                     required
                   />
                   <input
@@ -100,7 +100,7 @@ export default function Template() {
                     type="date"
                     min={maxDate}
                     placeholder="Tanggal Mulai Penitipan"
-                    className="relative px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
+                    className="relative bg-white px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
                     required
                   />
 

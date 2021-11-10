@@ -14,11 +14,14 @@ export default function Space() {
             <div className="flex flex-col">
               <div className="flex flex-col">
                 {/* Mulai ngoding di sini */}
-                <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pt-8 pb-5 drop-shadow-bottom shadow-md">
+                <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pt-5 pb-5 drop-shadow-bottom shadow-md">
                   <Search currentPage="space" />
                   <div className="flex">
                     <div className="dropdown dropdown-end bg-white border-0">
-                      <div tabIndex="0" className="m-1 btn bg-white border-0 hover:bg-search-bg focus:bg-blue-secondary mt-3">
+                      <div
+                        tabIndex="0"
+                        className="m-1 btn bg-white border-0 hover:bg-search-bg focus:bg-blue-secondary mt-3"
+                      >
                         <svg
                           width="19"
                           height="20"
@@ -61,112 +64,110 @@ export default function Space() {
                         </svg>
                       </button>
                     </div>
-
-                    
                   </div>
                 </div>
 
                 <div className="mt-28 mx-5">
                   <Link href="space/1">
-                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
-                    <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
-                    <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
-                      <h3 className="text-blue-main font-medium text-base">
-                        Abdur Rofi Maulidin
-                      </h3>
-                      <h4 className="text-yellow-pet font-medium text-sm mt-1">
-                        Rp28.000/hari
-                      </h4>
-                      <p className="text-xs font-light text-gray-500 mt-1">
-                        Kota Semarang
-                      </p>
+                    <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
+                      <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>
+                      <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm mt-1">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
 
                   <Link href="space/1">
-                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
-                    <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
-                    <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
-                      <h3 className="text-blue-main font-medium text-base">
-                        Abdur Rofi Maulidin
-                      </h3>
-                      <h4 className="text-yellow-pet font-medium text-sm mt-1">
-                        Rp28.000/hari
-                      </h4>
-                      <p className="text-xs font-light text-gray-500 mt-1">
-                        Kota Semarang
-                      </p>
+                    <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
+                      <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>
+                      <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm mt-1">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
 
                   <Link href="space/1">
-                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
-                    <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
-                    <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
-                      <h3 className="text-blue-main font-medium text-base">
-                        Abdur Rofi Maulidin
-                      </h3>
-                      <h4 className="text-yellow-pet font-medium text-sm mt-1">
-                        Rp28.000/hari
-                      </h4>
-                      <p className="text-xs font-light text-gray-500 mt-1">
-                        Kota Semarang
-                      </p>
+                    <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
+                      <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>
+                      <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm mt-1">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
 
                   <Link href="space/1">
-                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
-                    <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
-                    <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
-                      <h3 className="text-blue-main font-medium text-base">
-                        Abdur Rofi Maulidin
-                      </h3>
-                      <h4 className="text-yellow-pet font-medium text-sm mt-1">
-                        Rp28.000/hari
-                      </h4>
-                      <p className="text-xs font-light text-gray-500 mt-1">
-                        Kota Semarang
-                      </p>
+                    <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
+                      <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>
+                      <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm mt-1">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
 
                   <Link href="space/1">
-                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
-                    <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
-                    <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
-                      <h3 className="text-blue-main font-medium text-base">
-                        Abdur Rofi Maulidin
-                      </h3>
-                      <h4 className="text-yellow-pet font-medium text-sm mt-1">
-                        Rp28.000/hari
-                      </h4>
-                      <p className="text-xs font-light text-gray-500 mt-1">
-                        Kota Semarang
-                      </p>
+                    <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
+                      <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>
+                      <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm mt-1">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
 
                   <Link href="space/1">
-                  <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
-                    <img src="/img.png" className="w-1/3 rounded-l-lg"></img>
-                    <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
-                      <h3 className="text-blue-main font-medium text-base">
-                        Abdur Rofi Maulidin
-                      </h3>
-                      <h4 className="text-yellow-pet font-medium text-sm mt-1">
-                        Rp28.000/hari
-                      </h4>
-                      <p className="text-xs font-light text-gray-500 mt-1">
-                        Kota Semarang
-                      </p>
+                    <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
+                      <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>
+                      <div className="flex flex-col text-left mx-6 my-3 w-2/3 mt-5">
+                        <h3 className="text-blue-main font-medium text-base">
+                          Abdur Rofi Maulidin
+                        </h3>
+                        <h4 className="text-yellow-pet font-medium text-sm mt-1">
+                          Rp28.000/hari
+                        </h4>
+                        <p className="text-xs font-light text-gray-500 mt-1">
+                          Kota Semarang
+                        </p>
+                      </div>
                     </div>
-                  </div>
                   </Link>
                 </div>
               </div>

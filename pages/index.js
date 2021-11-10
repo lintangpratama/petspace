@@ -49,12 +49,12 @@ export default function Account() {
                           Hai! Yuk lihat status penitipan kucingmu
                         </h2>
                         <Link href="/status/cat">
-                          <button className="py-1.5 w-20 font-secondary text-white text-xs bg-yellow-pet rounded-xl mt-0 md:text-sm">
+                          <button className="py-1.5 w-20 font-secondary text-white text-xs bg-yellow-pet rounded-xl mt-3 md:text-sm">
                             <a>Check</a>
                           </button>
                         </Link>
                       </div>
-                      <img src="/status-card/cat.png" className="w-1/3"></img>
+                      <img src="/status-card/cat.png" className="w-1/3" loading="lazy"></img>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide className="text-center bg-card-status bg-cover rounded-xl">
@@ -69,7 +69,7 @@ export default function Account() {
                           </button>
                         </Link>
                       </div>
-                      <img src="/status-card/dog.png" className="w-1/3"></img>
+                      <img src="/status-card/dog.png" className="w-1/3" loading="lazy"></img>
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -83,7 +83,7 @@ export default function Account() {
                       Penitipan terdekat di Semarang
                     </p>
                   </div>
-                  <div className="flex font-secondary mt-6 text-sm font-normal underline text-blue-main">
+                  <div className="flex font-secondary mt-6 text-sm font-normal underline cursor-pointer text-blue-main">
                     View All
                   </div>
                 </div>
@@ -111,6 +111,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -132,6 +133,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -153,6 +155,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -174,6 +177,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -200,9 +204,11 @@ export default function Account() {
                       Penitipan terdekat di Jakarta
                     </p>
                   </div>
-                  <div className="flex font-secondary mt-6 text-sm font-normal underline text-blue-main">
+                  <Link href="space/">
+                  <div className="flex font-secondary mt-6 text-sm font-normal underline cursor-pointer text-blue-main">
                     View All
                   </div>
+                  </Link>
                 </div>
 
                 <Swiper
@@ -228,6 +234,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -249,6 +256,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -270,6 +278,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
@@ -291,6 +300,7 @@ export default function Account() {
                         <img
                           src="/img.png"
                           className="rounded-t-xl h-1/3"
+                          loading="lazy"
                         ></img>
                         <div className="flex flex-col text-left mx-2 my-3 h-2/3">
                           <h3 className="text-blue-main font-medium text-base">
