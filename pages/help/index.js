@@ -72,11 +72,11 @@ export default function Help() {
                   </div>
                   <div className="collapse-content ">
                     <p className="text-sm">
-                      Login terlebih dahulu ke akun PetSpace-mu{" "}
-                      {`->`} Cari Space pada menu bar "Space" {`->`} Pilih Space
-                      favoritmu {`->`} Klik "Request Space" {`->`} Isi data
-                      hewanmu {`->`} Tunggu konfirmasi dari pihak pihak Space{" "}
-                      {`->`} Jika request-mu diterima oleh pihak Space, kamu
+                      Login terlebih dahulu ke akun PetSpace-mu
+                      → Cari Space pada menu bar &quot;Space&quot; → Pilih Space
+                      favoritmu → Klik &quot;Request Space&quot; → Isi data
+                      hewanmu → Tunggu konfirmasi dari pihak pihak Space
+                      → Jika request-mu diterima oleh pihak Space, kamu
                       dapat langsung berkomunikasi dengan pihak Space melalui
                       WhatsApp.
                     </p>
