@@ -1,7 +1,6 @@
 import Head from "@/components/Head";
 import Back from "@/components/Back";
 
-
 String.prototype.replaceAt = function (index, replacement) {
   return (
     this.substr(0, index) +
@@ -20,7 +19,7 @@ export default function Template() {
     <div className="flex flex-col">
       <Head />
 
-      <body className="">
+      <div className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col">
@@ -55,7 +54,7 @@ export default function Template() {
                     className="select select-bordered w-full font-normal border-blue-secondary border-2 mt-3 "
                     required
                   >
-                    <option value="" disabled="disabled" selected="selected">
+                    <option value="kucing" disabled="disabled" selected="selected">
                       Jenis Hewan
                     </option>
                     <option value="anjing">Anjing</option>
@@ -68,7 +67,7 @@ export default function Template() {
                     className="select select-bordered w-full font-normal border-blue-secondary border-2 mt-3 "
                     required
                   >
-                    <option value="" disabled="disabled" selected="selected">
+                    <option value="male" disabled="disabled" selected="selected">
                       Jenis Kelamin Hewan
                     </option>
                     <option value="male">Laki-laki</option>
@@ -88,19 +87,23 @@ export default function Template() {
                   <input
                     id="dateIn"
                     name="dateIn"
-                    type="date"
+                    type="text"
+                    onFocus={(e) => (e.currentTarget.type = "date")}
+                    onBlur={(e) => (e.currentTarget.type = "text")}
                     min={minDate}
                     placeholder="Tanggal Mulai Penitipan"
-                    className="relative px-4 bg-white py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
+                    className="relative px-4 bg-white py-3 mt-3 placeholder-search-font w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
                     required
                   />
                   <input
                     id="dateOut"
                     name="dateOut"
-                    type="date"
+                    type="text"
+                    onFocus={(e) => (e.currentTarget.type = "date")}
+                    onBlur={(e) => (e.currentTarget.type = "text")}
                     min={maxDate}
-                    placeholder="Tanggal Mulai Penitipan"
-                    className="relative bg-white px-4 py-3 mt-3 placeholder-gray-800 w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
+                    placeholder="Tanggal Selesai Penitipan"
+                    className="relative bg-white px-4 py-3 mt-3 placeholder-search-font w-full border-opacity-100 border-2 rounded-lg border-blue-secondary"
                     required
                   />
 
@@ -149,7 +152,7 @@ export default function Template() {
             <div className="w-full h-16"></div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

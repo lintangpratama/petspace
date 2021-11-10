@@ -16,7 +16,7 @@ export default function SpaceDetails() {
         <title>PetSpace - Cariin Tempat Penitipan Hewan Buat Kamu</title>
         <link rel="icon" href="/petspace.png" />
       </Head>
-      <body className="font-body">
+      <div className="font-body">
         <div className="h-full bg-gray-100">
           <div className="box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col">
@@ -192,7 +192,7 @@ export default function SpaceDetails() {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

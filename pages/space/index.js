@@ -8,7 +8,7 @@ export default function Space() {
     <div className="flex flex-col">
       <Head />
 
-      <body className="">
+      <div className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col">
@@ -177,7 +177,7 @@ export default function Space() {
             <div className="w-full h-24"></div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

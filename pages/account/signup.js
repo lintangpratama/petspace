@@ -6,7 +6,7 @@ export default function SignUp() {
   return (
     <div className="flex flex-col">
       <Head />
-      <body className="font-body">
+      <div className="font-body">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col">
@@ -252,7 +252,7 @@ export default function SignUp() {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

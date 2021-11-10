@@ -16,7 +16,7 @@ export default function Account() {
     <div className="flex flex-col">
       <Head />
 
-      <body className="">
+      <div className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col h-full">
@@ -83,9 +83,11 @@ export default function Account() {
                       Penitipan terdekat di Semarang
                     </p>
                   </div>
+                  <Link href={`space?search=Semarang`}>
                   <div className="flex font-secondary mt-6 text-sm font-normal underline cursor-pointer text-blue-main">
                     View All
                   </div>
+                  </Link>
                 </div>
 
                 <Swiper
@@ -204,7 +206,7 @@ export default function Account() {
                       Penitipan terdekat di Jakarta
                     </p>
                   </div>
-                  <Link href="space/">
+                  <Link href={`space?search=Jakarta`}>
                   <div className="flex font-secondary mt-6 text-sm font-normal underline cursor-pointer text-blue-main">
                     View All
                   </div>
@@ -324,7 +326,7 @@ export default function Account() {
             <div className="w-full h-14"></div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

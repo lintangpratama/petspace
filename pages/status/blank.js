@@ -24,7 +24,7 @@ export default function Blank() {
         ></link>
       </Head>
 
-      <body className="">
+      <div className="">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
             <div className="flex flex-col h-full">
@@ -46,7 +46,7 @@ export default function Blank() {
             </div>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }
