@@ -18,19 +18,18 @@ export default function Account() {
                   Akun
                 </div>
                 {/* Content */}
-                <div className="my-7" style={{ display: "flex" }}>
-                  <img src="/petspace.png" className="w-28"></img>
+                <div className="mb-7 mt-10 flex flex-col text-center">
+                  <img src="/logo-pabrik.png" className="w-28 mx-auto"></img>
                   {/* Name and Email  */}
-                  <div className="content my-7 mx-5">
+                  <div className="mb-7 mt-3 mx-5">
                     <h3 className="text-xl font-semibold tracking-tight">
                       Eko Situbandar
                     </h3>
-                    <email
-                      className="tracking-tight disable underline"
-                      style={{ color: "rgba(124, 124, 128, 0.8)" }}
+                    <p
+                      className="tracking-tight underline text-search-font truncate"
                     >
-                      ekositubandar12345@gmail.com
-                    </email>
+                      lintangajiyogapratama@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -88,7 +87,7 @@ export default function Account() {
                   </a>
                 </div>
                 {/* Log out */}
-                <a href="/login">
+                <Link href="account/login">
                   <div className=" w-full h-lg text-white border-red-600 bg-red-600 border-2 rounded-md mt-10 transition-all duration-300 hover:border-red-600 hover:bg-white hover:text-red-600">
                     <div className="content">
                       <p
@@ -99,7 +98,7 @@ export default function Account() {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
                 {/* Version */}
                 <div className="text-right mt-2">
                   <p>PetSpace v.1.0</p>

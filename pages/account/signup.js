@@ -38,7 +38,7 @@ export default function SignUp() {
                       </a>
                     </span>
                     <input
-                      placeholder="Masukkan email anda"
+                      placeholder="Email"
                       type="email"
                       name="email"
                       className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
@@ -61,7 +61,7 @@ export default function SignUp() {
                       </a>
                     </span>
                     <input
-                      placeholder="Masukkan password anda"
+                      placeholder="Password"
                       type="password"
                       name="q"
                       className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
@@ -89,9 +89,9 @@ export default function SignUp() {
                       </a>
                     </span>
                     <input
-                      placeholder="Masukkan No NIK anda"
-                      type=""
-                      name="q"
+                      placeholder="NIK (Nomor Induk Kependudukan)"
+                      type="number"
+                      name="nik"
                       className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
                       style={{
@@ -116,12 +116,15 @@ export default function SignUp() {
                         ></img>
                       </a>
                     </span>
+
                     <input
-                      type="date"
-                      placeholder="Masukkan Tanggal Lahir anda"
-                      id="date"
-                      name="q"
-                      className="py-2 text-sm bg-background text-search-font border-blue-secondary bg-opacity-40 text-form rounded-md pl-4 pr-3 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2 "
+                      type="text"
+                      placeholder="Tanggal Lahir"
+                      onFocus={(e) => (e.currentTarget.type = "date")}
+                      onBlur={(e) => (e.currentTarget.type = "text")}
+                      id="birthDate"
+                      name="birthDate"
+                      className="py-2 text-sm bg-background text-search-font border-blue-secondary bg-opacity-40 text-form rounded-md pl-10 pr-3 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2 "
                       autoComplete="off"
                       style={{
                         width: "100%",
@@ -146,7 +149,7 @@ export default function SignUp() {
                       </a>
                     </span>
                     <input
-                      placeholder="Masukkan alamat anda (sesuai dengan KTP)"
+                      placeholder="Alamat (Sesuai KTP)"
                       type="text"
                       name="address"
                       className="py-2 text-sm text-form bg-background border-blue-secondary bg-opacity-40 rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
@@ -182,8 +185,8 @@ export default function SignUp() {
                       <option value="" disabled="disabled" selected="selected">
                         Daftar Sebagai
                       </option>
-                      <option value="male">Penitip</option>
-                      <option value="female">Tempat Penitipan</option>
+                      <option value="user">Penitip</option>
+                      <option value="user_penitipan">Tempat Penitipan</option>
                     </select>
                   </div>
 
@@ -195,8 +198,8 @@ export default function SignUp() {
                     </span>
                     <input
                       type="file"
-                      id="petImg"
-                      name="petImg"
+                      id="picFace"
+                      name="picFace"
                       accept="image/png, image/gif, image/jpeg"
                       className="hidden "
                       required
@@ -211,8 +214,8 @@ export default function SignUp() {
                     </span>
                     <input
                       type="file"
-                      id="petImg"
-                      name="petImg"
+                      id="picKTP"
+                      name="picKTP"
                       accept="image/png, image/gif, image/jpeg"
                       className="hidden"
                       required
@@ -231,7 +234,7 @@ export default function SignUp() {
                     <Link href="/account/login">
                       <p className="mt-5 text-sm" style={{ color: "#7C7C80" }}>
                         Sudah punya akun?{" "}
-                        <a href="#">
+                        <a>
                           <span
                             className="font-semibold text-md hover:underline"
                             style={{ color: "#429FF2" }}
@@ -247,8 +250,6 @@ export default function SignUp() {
                 {/* End Div */}
               </div>
             </div>
-            {/* <Bar currentPage="account"/>
-            <div className="w-full h-14"></div> */}
           </div>
         </div>
       </body>

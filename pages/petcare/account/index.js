@@ -108,7 +108,7 @@ export default function AccountPetcare() {
                   </a>
                 </div>
                 {/* Log out */}
-                <a href="/login">
+                <Link href="/account/login">
                   <div className=" w-100% bg-transparent h-lg border-abu border-2 rounded-md mt-8 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white">
                     <div className="content">
                       <p
@@ -119,7 +119,7 @@ export default function AccountPetcare() {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
                 {/* Version */}
                 <div className="text-right mt-2">
                   <p>PetSpace v.1.0</p>

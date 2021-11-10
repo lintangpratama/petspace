@@ -17,8 +17,8 @@ export default function Search(props) {
           action="/space"
           className={
             props.currentPage === "home"
-              ? "bg-search-bg w-full px-4 py-3 rounded-md text-sm font-serif mt-7"
-              : "bg-search-bg w-full px-4 py-3.5 rounded-md text-sm font-serif mb-1"
+              ? "bg-search-bg truncate w-full px-4 py-3 rounded-md text-sm font-serif mt-7"
+              : "bg-search-bg truncate w-full px-4 py-3.5 rounded-md text-sm font-serif mb-1"
           }
         >
           <div className="flex">
@@ -28,12 +28,12 @@ export default function Search(props) {
               id="search"
               className={
                 props.currentPage === "home"
-                  ? "bg-search-bg focus:bg-search-bg focus:outline-none w-full"
-                  : "bg-search-bg focus:outline-none w-full bg-blue-secondary"
+                  ? "bg-search-bg truncate focus:bg-search-bg focus:outline-none w-full"
+                  : "bg-search-bg truncate focus:outline-none w-full bg-blue-secondary"
               }
               placeholder="Mau titip hewan di kota mana?"
             ></input>
-            <button type="submit" className="text-search-font">
+            <button type="submit" className="text-search-font ml-1">
               <span>
                 <i className="fas fa-search"></i>
               </span>
