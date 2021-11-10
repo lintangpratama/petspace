@@ -1,5 +1,6 @@
 import Head from "@/components/Head";
-import Bar from "@/components/Bar";
+import BarPetCare from "@/components/BarPetCare";
+
 
 export default function Help() {
   return (
@@ -33,12 +34,12 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4" >
+                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
                   <input type="checkbox" />
-                  <div className="collapse-title text-md" >
+                  <div className="collapse-title text-md">
                     Mengapa kami membangun PetSpace?
                   </div>
-                  <div className="collapse-content" style={{backgroundColor: "white !important"}}>
+                  <div className="collapse-content ">
                     <p className="text-sm">
                       Kami memahami bahwa hewanmu merupakan hal yang sangat
                       berharga bagimu. Kami membangun PetSpace dengan tujuan
@@ -81,7 +82,7 @@ export default function Help() {
               </div>
             </div>
 
-            <Bar currentPage="help" />
+            <BarPetCare currentPage="help" />
           </div>
         </div>
       </body>

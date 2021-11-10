@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
-import Back from "@/components/Back";
 import Head from "next/head";
-import Link from "next/link";
+import Back from "@/components/Back";
+import StatusCard from "@/components/StatusCard";
 
-export default function Cat() {
+export default function Blank() {
   const router = useRouter();
   const name = "Lintang";
 
@@ -40,27 +40,8 @@ export default function Cat() {
                   </p>
                 </div>
 
-                <div className="flex flex-col justify-center rounded-xl items-center text-center px-4 py-7 mt-10 md:py-10">
-                  <img
-                    src="/status-card/dog-sleep.png"
-                    className="w-40 md:w-52"
-                  ></img>
-                  <div className="flex flex-col w-9/12 justify-between mt-2">
-                    <h2 className="text-black text-2xl font-semibold text-center">
-                      Ups!
-                    </h2>
-                    <div className="text-medium text-center font-serif text-black w-full mb-4">
-                      <p>Data space masih kosong</p>
-                    </div>
-
-                    <Link href="/space">
-                      <button className="py-2.5 w-36 text-white text-xs bg-blue-main rounded-lg mt-8 md:text-sm mx-auto">
-                        <a>Browse Space</a>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="h-24 w-full"></div>
+                <StatusCard user="user" pet="blank" />
+                <div className="h-52 w-full"></div>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Back from '@/components/Back';
+import StatusCard from "@/components/StatusCard";
 
 
 export default function Cat() {
@@ -38,26 +39,8 @@ export default function Cat() {
                   </p>
                 </div>
 
-                <div className="flex flex-col bg-card-status bg-auto justify-center rounded-xl items-center text-center px-4 py-7 mt-10 md:py-10">
-                  <img
-                    src="/status-card/cat-status.png"
-                    className="w-40 md:w-52"
-                  ></img>
-                  <div className="flex flex-col w-9/12 justify-between">
-                    <h2 className="text-white font-semibold md:text-base text-center" style={{fontSize: "25px"}}>
-                      Kitty
-                    </h2>
-                    <div className="text-base text-center font-serif text-white w-full my-6">
-                      <p>Lintang Aji Yoga Pratama</p>
-                      <p>19 Oktober 2021 - 6 November 2021</p>
-                      <p>Status: Accepted</p>
-                    </div>
-
-                    <button className="py-2.5 w-36 text-white font-medium bg-yellow-pet rounded-xl mt-3 md:text-sm mx-auto" style={{fontSize: "15px", width: "180px"}}>
-                      <a href={`https://api.whatsapp.com/send?phone=6285591639594&text=Test${name}`}>Chat via WhatsApp</a>
-                    </button>
-                  </div>
-                </div>
+                <StatusCard user="user" pet="cat" petName="Kitty" personName="Lintang Pratama" dateIn="12 November 2021" dateOut="16 November 2021" status="accepted" />
+                
                 <div className="h-24 w-full"></div>
               </div>
             </div>

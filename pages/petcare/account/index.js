@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Head from "@/components/Head";
-import Bar from "../../components/Bar";
+import BarPetCare from "@/components/BarPetCare";
 
 
-export default function Account() {
+export default function AccountPetcare() {
   return (
     <div className="flex flex-col">
       <Head />
@@ -54,8 +54,28 @@ export default function Account() {
                   </Link>
                 </div>
 
+                {/* Setting khusus penitipan */}
+                <div className="setting-box mt-5">
+                  <h4 className="text-lg tracking-tight font-medium">Space</h4>
+                  <div className="mt-2">
+                    <hr />
+                  </div>
+                  {/* Button Input Space */}
+                  <Link href="/petcare/account/input-space">
+                    <div className="mt-3 cursor-pointer" style={{ display: "flex" }}>
+                      <img src="/setting.svg"></img>
+                      <p
+                        className="mx-5"
+                        style={{ color: "rgba(124, 124, 128, 0.8)" }}
+                      >
+                        Masukkan Data Tempat Penitipan
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+
                 {/* Kontak Kami */}
-                <div className="setting-box mt-8">
+                <div className="setting-box mt-5">
                   <h4 className="text-lg tracking-tight font-medium">
                     Kontak Kami
                   </h4>
@@ -89,7 +109,7 @@ export default function Account() {
                 </div>
                 {/* Log out */}
                 <a href="/login">
-                  <div className=" w-full h-lg text-white border-red-600 bg-red-600 border-2 rounded-md mt-10 transition-all duration-300 hover:border-red-600 hover:bg-white hover:text-red-600">
+                  <div className=" w-100% bg-transparent h-lg border-abu border-2 rounded-md mt-8 transition-all duration-300 hover:border-red-600 hover:bg-red-600 hover:text-white">
                     <div className="content">
                       <p
                         className="tracking-tight text-blue text-lg font-semibold  text-center leading-3 group-hover:text-white"
@@ -107,8 +127,8 @@ export default function Account() {
               </div>
             </div>
 
-            <Bar currentPage="account" />
-            <div className="w-full h-96"></div>
+            <BarPetCare currentPage="account" />
+            <div className="w-full h-64"></div>
           </div>
         </div>
       </body>

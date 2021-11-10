@@ -3,7 +3,7 @@ import Back from "@/components/Back";
 import Link from "next/link";
 
 
-export default function Template() {
+export default function Login() {
   return (
     <div className="flex flex-col">
       <Head />
@@ -43,9 +43,9 @@ export default function Template() {
                       placeholder="Masukkan email anda"
                       type="search"
                       name="email"
-                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm bg-background bg-opacity-40 border-blue-secondary text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu border-abu border-2"
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
                   {/* Masukkan Password */}
@@ -62,9 +62,9 @@ export default function Template() {
                       placeholder="Masukkan password anda"
                       type="password"
                       name="password"
-                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm text-form bg-background border-blue-secondary bg-opacity-40 rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
                   

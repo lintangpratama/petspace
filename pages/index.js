@@ -74,13 +74,18 @@ export default function Account() {
                   </SwiperSlide>
                 </Swiper>
 
-                <div className="mt-9">
-                  <h1 className="font-semibold font-secondary text-blue-main text-base">
-                    Space di Semarang
-                  </h1>
-                  <p className="text-xs font-secondary text-gray-500">
-                    Penitipan terdekat di Semarang
-                  </p>
+                <div className="flex flex-row mt-9 justify-between">
+                  <div className="flex flex-col">
+                    <h1 className="font-semibold font-secondary text-blue-main text-base">
+                      Space di Semarang
+                    </h1>
+                    <p className="text-xs font-secondary mt-1 text-gray-500">
+                      Penitipan terdekat di Semarang
+                    </p>
+                  </div>
+                  <div className="flex font-secondary mt-6 text-sm font-normal underline text-blue-main">
+                    View All
+                  </div>
                 </div>
 
                 <Swiper
@@ -186,13 +191,18 @@ export default function Account() {
                   </SwiperSlide>{" "}
                 </Swiper>
 
-                <div className="mt-10">
-                  <h1 className="font-semibold font-secondary text-blue-main text-base">
-                    Space di Jakarta
-                  </h1>
-                  <p className="text-xs font-secondary text-gray-500">
-                    Penitipan terdekat di Jakarta
-                  </p>
+                <div className="flex flex-row justify-between mt-9">
+                  <div className="flex flex-col">
+                    <h1 className="font-semibold font-secondary text-blue-main text-base">
+                      Space di Jakarta
+                    </h1>
+                    <p className="text-xs font-secondary mt-1 text-gray-500">
+                      Penitipan terdekat di Jakarta
+                    </p>
+                  </div>
+                  <div className="flex font-secondary mt-6 text-sm font-normal underline text-blue-main">
+                    View All
+                  </div>
                 </div>
 
                 <Swiper

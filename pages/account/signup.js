@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "@/components/Head";
 import Back from "@/components/Back";
 
-export default function Template() {
+export default function SignUp() {
   return (
     <div className="flex flex-col">
       <Head />
@@ -41,9 +41,9 @@ export default function Template() {
                       placeholder="Masukkan email anda"
                       type="password"
                       name="q"
-                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
                   {/* Masukkan password */}
@@ -60,9 +60,9 @@ export default function Template() {
                       placeholder="Masukkan password anda"
                       type="password"
                       name="q"
-                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
 
@@ -84,9 +84,9 @@ export default function Template() {
                       placeholder="Masukkan No NIK anda"
                       type=""
                       name="q"
-                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
 
@@ -109,9 +109,9 @@ export default function Template() {
                       placeholder="Masukkan Tanggal Lahir anda"
                       id="date"
                       name="q"
-                      className="py-2 text-sm text-form rounded-md pl-4 pr-3 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2 "
+                      className="py-2 text-sm bg-background border-blue-secondary bg-opacity-40 text-form rounded-md pl-4 pr-3 focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2 "
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
 
@@ -133,14 +133,14 @@ export default function Template() {
                       placeholder="Masukkan alamat anda (sesuai dengan KTP)"
                       type=""
                       name="q"
-                      className="py-2 text-sm text-form rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
+                      className="py-2 text-sm text-form bg-background border-blue-secondary bg-opacity-40 rounded-md pl-10  focus:outline-none focus:ring focus:border-blue-50 bg-abu h-md border-abu border-2"
                       autoComplete="off"
-                      style={{ width: "100%", textIndent: "24px" }}
+                      style={{ width: "100%", textIndent: "24px", height: "47px" }}
                     ></input>
                   </div>
 
                   {/* Upload foto wajah */}
-                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                  <label className="w-full mt-3 flex flex-col items-center bg-background  bg-opacity-40 px-4 py-6  rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
                     <i className="fas fa-camera fa-2x"></i>
                     <span className="mt-1 text-xs leading-normal">
                       Foto Wajah
@@ -150,13 +150,13 @@ export default function Template() {
                       id="petImg"
                       name="petImg"
                       accept="image/png, image/gif, image/jpeg"
-                      className="hidden"
+                      className="hidden "
                       required
                     />
                   </label>
 
                   {/* Upload foto ktp */}
-                  <label className="w-full mt-3 flex flex-col items-center px-4 py-6 bg-white rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
+                  <label className="w-full mt-3 flex flex-col items-center bg-background bg-opacity-40 px-4 py-6 rounded-md tracking-wide border border-blue-secondary cursor-pointer hover:bg-blue-main hover:text-white  ease-linear transition-all duration-150">
                     <i className="fas fa-camera fa-2x"></i>
                     <span className="mt-1 text-xs leading-normal">
                       Foto KTP

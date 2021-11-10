@@ -136,10 +136,10 @@ export default function Template() {
                   <input
                     type="submit"
                     value="Verifikasi"
-                    className="mt-4 px-4 py-4 bg-blue-main text-white font-medium w-full cursor-pointer border-2 border-blue-main rounded-lg ease-linear duration-150 hover:text-blue-main hover:border-2 hover:bg-white"
+                    className="mt-4 px-4 py-4 bg-blue-main text-white font-medium w-full cursor-pointer border-2 border-blue-main rounded-lg "
                   ></input>
 
-                  <button className="mt-3 px-4 py-4 bg-white text-blue-main font-medium w-full border-2 border-blue-main rounded-lg ease-linear duration-150 hover:text-white hover:border-2 hover:bg-blue-main">
+                  <button className="mt-3 px-4 py-4 bg-white text-blue-main font-medium w-full border-2 border-blue-main rounded-lg ">
                     Batal
                   </button>
                 </form>

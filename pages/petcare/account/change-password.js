@@ -2,7 +2,7 @@ import Head from "@/components/Head";
 import Bar from "@/components/Bar";
 import Back from "@/components/Back";
 
-export default function ChangePassword() {
+export default function ChangePasswordPetCare() {
   return (
     <div className="flex flex-col">
       <Head />
