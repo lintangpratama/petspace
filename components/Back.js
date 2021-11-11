@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 export default function Back(props) {
   const router = useRouter();
   return (
-    <div>
+    <div className={props.page === 'space-details' ? "flex justify-center mt-1 mr-3" : ""}>
       <button
         onClick={() => router.back()}
-        className={props.page === 'space-details' ? "fixed z-20 top-4 ml-4 flex justify-center items-center bg-white p-2 rounded-xl hover:bg-blue-secondary-hover" : "flex justify-center items-center bg-gray-100 p-2 rounded-xl bg-blue-secondary hover:bg-blue-secondary-hover"}
+        className={props.page === 'space-details' ? "flex justify-center items-center bg-white p-2 px-3 mt-2 mb-1 rounded-xl hover:bg-blue-secondary-hover" : "flex justify-center items-center bg-gray-100 p-2 rounded-xl bg-blue-secondary hover:bg-blue-secondary-hover"}
       >
         <svg
           width="23"
