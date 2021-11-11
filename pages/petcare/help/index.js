@@ -12,7 +12,7 @@ export default function Help() {
               <div className="mx-5 my-10 h-screen">
                 {/* Mulai ngoding di sini */}
                 {/* Title */}
-                <div className="font-normal font-main text-gray-900 text-2xl">
+                <div className="font-normal font-main text-gray-500 text-2xl">
                   Bantuan
                 </div>
 
@@ -22,7 +22,7 @@ export default function Help() {
                 </p>
 
                 <div className="pt-7"></div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4 py-0">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title">Apa itu PetSpace?</div>
                   <div className="collapse-content ">
@@ -33,7 +33,7 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title text-md">
                     Mengapa kami membangun PetSpace?
@@ -53,7 +53,7 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title text-md">Produk & Layanan</div>
                   <div className="collapse-content ">
@@ -65,7 +65,7 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title text-md">
                     Bagaimana prosedur penitipan hewan di PetSpace?

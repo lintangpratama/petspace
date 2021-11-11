@@ -23,6 +23,8 @@ module.exports = {
         "yellow-pet-hover": "#E79339",
         "search-bg": "#F5F5F5",
         "search-font": "#88888C",
+        "whatsapp": "#25D366",
+        "whatsapp-hover": "#128C7E",
       },
       fontSize: {
         bar: ".75rem",

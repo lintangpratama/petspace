@@ -22,7 +22,7 @@ export default function Account() {
                   <img src="/logo-pabrik.png" className="w-28 mx-auto"></img>
                   {/* Name and Email  */}
                   <div className="mb-7 mt-3 mx-5">
-                    <h3 className="text-xl font-semibold tracking-tight">
+                    <h3 className="text-xl font-semibold tracking-tight text-gray-900">
                       Eko Situbandar
                     </h3>
                     <p
@@ -35,7 +35,7 @@ export default function Account() {
 
                 {/* Akun Setting */}
                 <div className="setting-box mt-5">
-                  <h4 className="text-lg tracking-tight font-medium">Akun</h4>
+                  <h4 className="text-lg tracking-tight font-medium text-gray-900">Pengaturan Akun</h4>
                   <div className="mt-2">
                     <hr />
                   </div>
@@ -55,7 +55,7 @@ export default function Account() {
 
                 {/* Kontak Kami */}
                 <div className="setting-box mt-8">
-                  <h4 className="text-lg tracking-tight font-medium">
+                  <h4 className="text-lg tracking-tight font-medium text-gray-900">
                     Kontak Kami
                   </h4>
                   <div className="mt-2">

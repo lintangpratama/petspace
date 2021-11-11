@@ -4,7 +4,14 @@ import Bar from "@/components/Bar";
 export default function Help() {
   return (
     <div className="flex flex-col">
-      <Head />
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <div className="font-body">
         <div className="h-full bg-gray-100">
           <div className="block box-border bg-white max-w-md w-full mx-auto h-full">
@@ -22,8 +29,8 @@ export default function Help() {
                 </p>
 
                 <div className="pt-7"></div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4 py-0">
-                  <input type="checkbox" />
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 py-0 text-gray-500">
+                  <input type="checkbox" className="" />
                   <div className="collapse-title">Apa itu PetSpace?</div>
                   <div className="collapse-content ">
                     <p className="text-sm">
@@ -33,7 +40,7 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title text-md">
                     Mengapa kami membangun PetSpace?
@@ -53,7 +60,7 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title text-md">Produk & Layanan</div>
                   <div className="collapse-content ">
@@ -65,22 +72,31 @@ export default function Help() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse border rounded-box border-base-300 collapse-arrow font-secondary w-full mt-4">
+                <div className="collapse border-2 rounded-box border-blue-secondary collapse-arrow font-secondary w-full mt-4 text-gray-500">
                   <input type="checkbox" />
                   <div className="collapse-title text-md">
                     Bagaimana prosedur penitipan hewan di PetSpace?
                   </div>
                   <div className="collapse-content ">
                     <p className="text-sm">
-                      Login terlebih dahulu ke akun PetSpace-mu
-                      → Cari Space pada menu bar &quot;Space&quot; → Pilih Space
-                      favoritmu → Klik &quot;Request Space&quot; → Isi data
-                      hewanmu → Tunggu konfirmasi dari pihak pihak Space
-                      → Jika request-mu diterima oleh pihak Space, kamu
-                      dapat langsung berkomunikasi dengan pihak Space melalui
-                      WhatsApp.
+                      Login terlebih dahulu ke akun PetSpace-mu → Cari Space
+                      pada menu bar &quot;Space&quot; → Pilih Space favoritmu →
+                      Klik &quot;Request Space&quot; → Isi data hewanmu → Tunggu
+                      konfirmasi dari pihak pihak Space → Jika request-mu
+                      diterima oleh pihak Space, kamu dapat langsung
+                      berkomunikasi dengan pihak Space melalui WhatsApp.
                     </p>
                   </div>
+                </div>
+
+                <div className="max-w-md w-full fixed align-end bottom-24">
+                  <a href="https://api.whatsapp.com/send?phone=6285892942057&text=Halo, Admin Ganteng!%20Saya%20ingin%20bertanya%20seputar%20PetSpace%20dong">
+                  <button className="mr-10 w-14 h-14 bg-whatsapp hover:bg-whatsapp-hover ease-linear duration-200 rounded-full">
+                    <span>
+                      <i className="fab fa-whatsapp text-white text-4xl"></i>
+                    </span>
+                  </button>
+                  </a>
                 </div>
                 <div className="w-full h-64"></div>
               </div>

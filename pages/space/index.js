@@ -14,7 +14,7 @@ export default function Space() {
             <div className="flex flex-col">
               <div className="flex flex-col">
                 {/* Mulai ngoding di sini */}
-                <div className="flex bg-white fixed z-30 max-w-md w-full px-5 drop-shadow-bottom shadow-md rounded-b-box">
+                <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pb-2 drop-shadow-bottom shadow-md rounded-b-box">
                   <Search currentPage="space" />
                   <div className="flex">
                     <div className="dropdown dropdown-end bg-white border-0">

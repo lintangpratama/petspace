@@ -3,3 +3,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     -webkit-appearance: none;
 }
+
+.align-end {
+    text-align: end;
+}
