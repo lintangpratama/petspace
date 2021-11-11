@@ -14,17 +14,17 @@ export default function Space() {
             <div className="flex flex-col">
               <div className="flex flex-col">
                 {/* Mulai ngoding di sini */}
-                <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pb-2 drop-shadow-bottom shadow-md rounded-b-box">
+                <div className="flex bg-white fixed z-30 max-w-md w-full px-5 pb-2 drop-shadow-bottom shadow-md">
                   <Search currentPage="space" />
                   <div className="flex">
                     <div className="dropdown dropdown-end bg-white border-0">
                       <div
                         tabIndex="0"
-                        className="btn bg-white border-0 hover:bg-search-bg focus:bg-blue-secondary mt-3"
+                        className="btn bg-white border-0 py-0 hover:bg-search-bg focus:bg-transparent mt-1.5 "
                       >
                         <svg
-                          width="19"
-                          height="20"
+                          width="18"
+                          height="18"
                           viewBox="0 0 19 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export default function Space() {
                   </div>
                 </div>
 
-                <div className="mt-20 mx-5">
+                <div className="mt-16 mx-5">
                   <Link href="space/1">
                     <div className="flex mt-5 shadow-md rounded-lg cursor-pointer">
                       <img src="/img.png" className="w-1/3 rounded-l-lg" loading="lazy"></img>

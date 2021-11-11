@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function Search(props) {
   return (
-    <div className="flex flex-col w-full mr-2 mt-3">
+    <div className="flex flex-col w-full mt-3">
       <Head>
         <link
           rel="stylesheet"
@@ -18,7 +18,7 @@ export default function Search(props) {
           className={
             props.currentPage === "home"
               ? "bg-search-bg truncate w-full px-4 py-3 rounded-md text-sm font-serif mt-7"
-              : "bg-search-bg truncate w-full px-4 py-3.5 rounded-md text-sm font-serif mb-1"
+              : "bg-search-bg truncate w-full px-4 py-1.5 pt-2.5 rounded-md text-sm font-serif"
           }
         >
           <div className="flex">
