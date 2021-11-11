@@ -20,7 +20,7 @@ export default function Space() {
                     <div className="dropdown dropdown-end bg-white border-0">
                       <div
                         tabIndex="0"
-                        className="btn bg-white border-0 py-0 hover:bg-search-bg focus:bg-transparent mt-1.5 "
+                        className="btn bg-white border-0 py-0 hover:bg-transparent focus:bg-transparent mt-1.5 "
                       >
                         <svg
                           width="18"
